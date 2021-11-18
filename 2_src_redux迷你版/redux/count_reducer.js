@@ -5,6 +5,7 @@
 const initState = 0
 
 export default function countReducer(preState = initState, action) {
+	console.log(action)
 	const { type, data } = action
 	switch (type) {
 		case 'increment': // 如果为加
